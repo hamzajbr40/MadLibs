@@ -82,7 +82,6 @@ public class StoryActivity extends AppCompatActivity {
             x=scanner.nextLine();
             story+=x+"\n";
         }
-        Log.e("story",story_name);
 
             switch (story_name.trim()) {
                 case "Simple":
