@@ -10,7 +10,7 @@ import android.widget.TextView;
 import java.util.Scanner;
 
 public class StoryActivity extends AppCompatActivity {
-    String  x,story_name="1",story="2",
+    String  x,story_name="1",story,
             job="3",adjective="4",place="5",plural_noun="6",noun="7",funny_noise="8",
             number="9",city="10",color="11",unusual_adjective="12",exciting_adjective="13",
             male_name="14",interesting_adjective="15",adverb="16",verb="17",body_part="18",persons_name="19";
@@ -83,7 +83,7 @@ public class StoryActivity extends AppCompatActivity {
             story+=x+"\n";
         }
 
-            switch (story_name.trim()) {
+            switch (story_name) {
                 case "Simple":
                     story=story.replaceAll("<job>", job);
                     story=story.replaceAll("<adjective>", adjective);

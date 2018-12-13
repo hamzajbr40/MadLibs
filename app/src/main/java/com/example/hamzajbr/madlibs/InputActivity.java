@@ -72,11 +72,11 @@ public class InputActivity extends AppCompatActivity {
 
     public void onOkClick(View view) {
         words--;
+        y = input.getText().toString();
         if(words==0){
             putExtra(y);
             startActivity(intent);
         }else {
-            y = input.getText().toString();
             Log.i("value", y);
             putExtra(y);
             hint.setText("please type a/an " + inputHint[i]);
